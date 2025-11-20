@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape (class)room</title>
+
+    <!-- Leaflet CSS (karta) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Tvoj CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- OVDJE IDE POČETNI EKRAN (login) -->
+    <div class="container">
+        <form id="loginForm">
+            <select id="schoolSelect">
+                <option value="">Odaberi školu...</option>
+            </select>
+            <button type="submit">Kreni!</button>
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+
+    <!-- KARTA -->
+    <div id="map" style="display:none;"></div>
+
+    <!-- TOOLBOX, TRAGOVI itd. DODAT ĆEMO POSLIJE -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Tvoj JS -->
+    <script src="script.js"></script>
+</body>
+</html>
